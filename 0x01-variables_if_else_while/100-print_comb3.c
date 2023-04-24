@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /**
- * main is prints all possible different combinations of two digit
- *  followed by a new line.
+ * main - prints all possible different combinations of two digit
  *
  * Return: Always 0.
  */
