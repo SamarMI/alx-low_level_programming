@@ -3,8 +3,8 @@
 /**
  *	add - adds two integers
  *  @n: the first int
- *  @n: the second int
- *	returns the result.
+ *  @m: the second int
+ *	returns the result od add two integer.
  */
 int add(int n, int m)
 {
