@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *  prints every minute of the day 
+ *  print_to_98 - prints every minute of the day 
  *  of Jack Bauer,
  *  starting from 00:00 to 23:59.
  */
