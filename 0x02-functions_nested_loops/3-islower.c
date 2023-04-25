@@ -1,4 +1,4 @@
-#include<header.h>
+#include<main.h>
 
 /**
  * main - is checks for lowercase character

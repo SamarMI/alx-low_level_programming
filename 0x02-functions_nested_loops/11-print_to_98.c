@@ -1,4 +1,4 @@
-#include "header.h"
+#include "main.h"
 
 /**
  *  prints every minute of the day of Jack Bauer,
