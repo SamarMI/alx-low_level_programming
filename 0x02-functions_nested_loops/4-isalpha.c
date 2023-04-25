@@ -2,6 +2,7 @@
 
 /**
  * _isalpha - is checks for alphabetic character.
+ *  @c: the character to check
  * sucess return 1 
  * faild return 0
  *
