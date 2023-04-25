@@ -5,6 +5,7 @@
  * use _putchar function
  * Return: void.
  */
+
 void print_alphabet(void)
 {
 	int c;
