@@ -4,7 +4,7 @@
  *	add - adds two integers
  *  @n: the first int
  *  @m: the second int
- *	returns the result od add two integer.
+ *	Return: the result od add two integer.
  */
 int add(int n, int m)
 {
