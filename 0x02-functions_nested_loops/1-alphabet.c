@@ -2,7 +2,8 @@
 
 /**
  * main - is print the alphabet, in lowercase
- *
+ * use _putchar function
+ * Return: void.
  */
 void print_alphabet(void)
 {

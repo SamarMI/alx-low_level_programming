@@ -3,7 +3,9 @@
 
 /**
  *  prints every minute of the day of Jack Bauer,
+ *  and will
  *  starting from 00:00 to 23:59.
+ *  void return
  */
 void jack_bauer(void)
 {
@@ -19,7 +21,7 @@ void jack_bauer(void)
 			_putchar(':');
 			_putchar((j / 10) + '0');
 			_putchar((j % 10) + '0');
-			_putchar('/n');
+			_putchar('\n');
 			j++;
 		}
 		i++;
