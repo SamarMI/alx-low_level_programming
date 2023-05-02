@@ -2,7 +2,7 @@
 
 /**
  * rev_string -  function that reverses a string.
- * @s: The pointer to the string to know it's length
+ * @s: The pointer to the string to reverse it.
  */
 
 
@@ -17,9 +17,9 @@ void rev_string(char *s)
 		i++;
 	}
 	len = i;
-	for (i = 0; i < len/2; i++)
+	for (i = 0; i < len / 2; i++)
 	{
-		temp = *(s + i );
+		temp = *(s + i);
 		s[i] = s[len - i - 1];
 		s[len - i - 1] = temp;
 	}
