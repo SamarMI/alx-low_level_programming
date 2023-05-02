@@ -11,13 +11,13 @@ void print_rev(char *s)
 	int j = 0;
 	char *str;
 
-	while (*(s + i) != '\n')
+	while (*(s + i) != '\0')
 	{
 		*(str + i);
 		i++;
 	}
-	*(str + i) = '\n';
-	while (*(str + i - 1) != '\n')
+	*(str + i) = '\0';
+	while (*(str + i - 1) != '\0')
 	{
 		s[j] = *(str + i - 1);
 		i--;
