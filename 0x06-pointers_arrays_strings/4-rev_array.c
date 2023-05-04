@@ -2,6 +2,7 @@
 
 /**
  * reverse_array - that compares two strings
+ * @a: is the pointer to array elements of the array
  * @n: is the number of elements of the array
  */
 void reverse_array(int *a, int n)
