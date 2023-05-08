@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strstr - function finds the first occurrence of the substring needle
+ * *_strstr - function finds the first occurrence of the substring needle
  * in the string haystack. The terminating null bytes (\0) are not compared.
  * @haystack: pointer to the first occurrence in the string.
  * @needle: pointer to the substring.

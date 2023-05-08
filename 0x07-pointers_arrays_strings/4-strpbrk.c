@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strpbrk - function that searches a string for any of a set of bytes.
+ * *_strpbrk - function that searches a string for any of a set of bytes.
  * @s: pointer to the first occurrence in the string.
  * @accept: pointer to the accept string.
  * Returns: Returns a pointer to the byte in s
