@@ -3,7 +3,6 @@
 
 /**
  * *str_concat -   a function that concatenates two strings.
-
  * @s1: string 1 .
  * @s2: string 2 to concatenates to string1
  * Return: returned pointer should point to a newly allocated
@@ -32,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		size2++;
 	}
-	p = (char *)malloc(sizeof(char) * (size1 + size2) - 1);
+	p = (char *)malloc(sizeof(char) * (size1 + size2) + 1);
 	if (p == NULL)
 	{
 		return (0);
