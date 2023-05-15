@@ -18,6 +18,7 @@ char *str_concat(char *s1, char *s2)
 	unsigned int  j = 0;
 	unsigned int  size1 = 0;
 	unsigned int  size2 = 0;
+	char *p;
 
 	if (s1 == 0 && s2 == 0)
 	{
