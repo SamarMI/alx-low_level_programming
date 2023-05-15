@@ -36,15 +36,21 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (0);
 	}
-	while (i < (size1))
+	if(s1)
 	{
-		*(p + i) = *(s1 + i);
-		i++;
+		while (i < (size1))
+		{
+			*(p + i) = *(s1 + i);
+			i++;
+		}
 	}
-	while (j < (size2))
+	if(s2)
 	{
-		*(p + i + j) = *(s2 + j);
-		j++;
+		while (j < (size2))
+		{
+			*(p + i + j) = *(s2 + j);
+			j++;
+		}
 	}
 	*(p + j + i) = '\0';
 	return (p);
