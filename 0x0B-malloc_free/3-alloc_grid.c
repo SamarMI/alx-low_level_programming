@@ -5,8 +5,8 @@
  * **alloc_grid -a function that returns a pointer
  *  to a 2 dimensional array of integers.
  * Each element of the grid should be initialized to 0
- * @width: string 1 .
- * @height: string 2 to concatenates to string1
+ * @width: width of array .
+ * @height: height of array.
  * Return: return NULL on failure
  * if width or height is 0 or negative, return NULL.
  */
