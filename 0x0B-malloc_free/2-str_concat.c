@@ -16,19 +16,15 @@ char *str_concat(char *s1, char *s2)
 	unsigned int  i = 0, j = 0, size1 = 0, size2 = 0;
 	char *p;
 
-	if (s1 == 0 && s2 == 0)
-	{
-		return (NULL);
-	}
-	while (*(s1 + size1) != '\0')
+	while (s1 && s1[size1])
 	{
 		size1++;
 	}
-	while (*(s2 + size2) != '\0')
+	while (s2 && s2[size2])
 	{
 		size2++;
 	}
-	p = (char *)malloc(sizeof(char) * (size1 + size2) + 1);
+	p = malloc(sizeof(char) * (size1 + size2) + 1);
 	if (p == NULL)
 		return (0);
 	if (s1)
@@ -41,13 +37,14 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s2)
 	{
-		while (j < (size2 + size1))
+		while (i < (size2 + size1))
 		{
-			*(p + i + j) = *(s2 + j);
+			*(p + i) = *(s2 + j);
 			j++;
+            i++;
 		}
 	}
-	*(p + j + i) = '\0';
+	*(p + i) = '\0';
 	return (p);
 
 }
