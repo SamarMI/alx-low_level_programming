@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - function fills the first n bytes of the memory area with cons b.
+ * *_memset - function fills the first n bytes of the memory area with cons b.
  * @s: pointer to area of memory.
  * @b: constant byte.
  * @n: numbers of bytes will be filled.
