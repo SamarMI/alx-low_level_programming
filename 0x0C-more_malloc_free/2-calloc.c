@@ -40,12 +40,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	ptr = malloc(size * nmemb);
+	p = malloc(size * nmemb);
 
-	if (ptr == NULL)
+	if (p == NULL)
 		return (NULL);
 
-	_memset(ptr, 0, nmemb * size);
+	_memset(p, 0, nmemb * size);
 
 	return (p);
 }
