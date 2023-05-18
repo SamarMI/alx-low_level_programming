@@ -2,12 +2,10 @@
 #include "main.h"
 
 /**
- * *array_range -a function that creates an array of integers.
+ * *array_range - a function that creates an array of integers.
  * @min: number of elements in the array
  * @max: size of each element
- *
  * Return: pointer to allocated memory
- * If nmemb or size is 0, then _calloc returns NULL
  */
 int *array_range(int min, int max)
 {
@@ -16,7 +14,6 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-
 
 	size = (max - min + 1);  
 	p = malloc(sizeof(int) * size);
