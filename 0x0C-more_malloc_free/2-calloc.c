@@ -23,14 +23,10 @@ char *_memset(char *s, char b, unsigned int n)
 
 /**
  * *_calloc -a function that allocates memory for an array, using malloc.
- * The _calloc function allocates memory for an array 
- * of nmemb elements of size bytes each and returns a pointer to the allocated memory.
  * The memory is set to zero.
  * @nmemb: number of elements in the array
  * @size: size of each element
- *
  * Return: pointer to allocated memory
- * If nmemb or size is 0, then _calloc returns NULL
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
