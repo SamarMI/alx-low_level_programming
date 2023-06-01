@@ -1,9 +1,9 @@
-#include "lists.h"
+##include <stdio.h>
+include "lists.h"
 
 /**
  * list_len - print  all elements in linked list
  * @h: pointer to head of list.
-
  *
  * Return: the number of nodes
  */
