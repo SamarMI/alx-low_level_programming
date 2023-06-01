@@ -1,5 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
+#include <string.h>
+
 
 /**
  * add_node - dds a new node at the beginning of a list_t list.
