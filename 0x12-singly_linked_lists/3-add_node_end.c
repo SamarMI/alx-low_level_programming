@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * add_node - dds a new node at the end of a list_t list.
+ * add_node_end - dds a new node at the end of a list_t list.
  * @head: pointer to head pointer of list.
  * @str: pointer to string data of node.
  *
