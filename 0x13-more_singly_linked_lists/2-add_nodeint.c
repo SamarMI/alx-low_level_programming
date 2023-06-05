@@ -5,7 +5,7 @@
 /**
  * add_nodeint - adds a new node at the beginning of a list_t list.
  * @head: pointer to head pointer of list.
- * @str: pointer to string data of node.
+ * @n: integer data of node.
  *
  * Return: the address of the new element, or NULL if it failed.
  */
