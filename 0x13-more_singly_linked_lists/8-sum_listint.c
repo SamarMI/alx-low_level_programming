@@ -12,7 +12,7 @@
 int sum_listint(listint_t *head)
 {
 	listint_t *temp;
-	unsigned int sum = 0;
+	int sum = 0;
 
 
 	if (!head)
