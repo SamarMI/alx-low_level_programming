@@ -3,7 +3,6 @@
 #include <stdlib.h>
 
 char *create_buffer(char *file);
-void close_file(int fd);
 
 /**
  * create_buffer - Allocates 1024 bytes for a buffer.
@@ -26,22 +25,6 @@ char *create_buffer(char *file)
 	return (buffer);
 }
 
-/**
- * close_file - Closes file descriptors.
- * @fd: The file descriptor to be closed.
- */
-void close_file(int fd)
-{
-	int c;
-
-	c = close(fd);
-
-	if (c == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-		exit(100);
-	}
-}
 
 /**
  * main - Copies the contents of a file to another file.
@@ -57,7 +40,7 @@ void close_file(int fd)
  */
 int main(int argc, char *argv[])
 {
-	int src, dist, r, w;
+	int src, dist, r, w, c1, c2;
 	char *buffer;
 
 	if (argc != 3)
@@ -65,7 +48,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_src file_to\n");
 		exit(97);
 	}
-
 	buffer = create_buffer(argv[2]);
 	src = open(argv[1], O_RDONLY);
 	r = read(src, buffer, 1024);
@@ -95,8 +77,13 @@ int main(int argc, char *argv[])
 	} while (r > 0);
 
 	free(buffer);
-	close_file(src);
-	close_file(dist);
+	c1 = close(src);
+	c2 = close(dist);
+	if (c1 == -1 || c2 == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		exit(100);
+	}
 
 	return (0);
 }
