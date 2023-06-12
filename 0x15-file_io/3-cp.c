@@ -78,10 +78,15 @@ int main(int argc, char *argv[])
 
 	free(buffer);
 	c1 = close(src);
-	c2 = close(dist);
-	if (c1 == -1 || c2 == -1)
+	if (c1 == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close c1 %d\n", c1);
+		exit(100);
+	}
+	c2 = close(dist);
+	if (c2 == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close c2 %d\n", c2);
 		exit(100);
 	}
 
