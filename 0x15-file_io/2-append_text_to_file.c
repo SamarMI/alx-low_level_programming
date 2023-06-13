@@ -18,8 +18,12 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (open_myfile == -1)
 		return (-1);
 
-	while (text_content[letters])
-		letters++;
+	if (text_content != NULL)
+	{
+		while (text_content[letters])
+			letters++;
+
+	}
 
 	write_myfile = write(open_myfile, text_content, letters);
 	if (write_myfile == -1)
